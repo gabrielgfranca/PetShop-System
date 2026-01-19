@@ -30,4 +30,13 @@ public class Client {
 
     public void addPet(Pet pet) { this.pets.add(pet); }
     public void removePet(Pet pet) { this.pets.remove(pet); }
+
+    @Override
+    public String toString() {
+        return "{ "
+                + "Name:" + name + ", "
+                + "Phone:" + phone + ", "
+                + address.toString()
+                + " }";
+    }
 }

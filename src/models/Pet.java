@@ -32,5 +32,14 @@ public class Pet {
     public void setAge(int age) { this.age = age; }
     public void setOwner(Client owner) { this.owner = owner; }
 
-
+    @Override
+    public String toString() {
+        return "Pet: { "
+                + "Name:" + name + ", "
+                + "Race:" + race + ", "
+                + "Type:" + type + ", "
+                + "Age:" + age + ", "
+                + "Owner:" + owner.toString()
+                + " }";
+    }
 }
