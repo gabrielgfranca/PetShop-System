@@ -31,6 +31,15 @@ public class Client {
     public void addPet(Pet pet) { this.pets.add(pet); }
     public void removePet(Pet pet) { this.pets.remove(pet); }
 
+    public Pet searchForPet(String name) {
+        for (Pet pet : pets) {
+            if (name.equals(pet.getName())) {
+                return pet;
+            }
+        }
+        return null;
+    }
+
     @Override
     public String toString() {
         return "{ "
