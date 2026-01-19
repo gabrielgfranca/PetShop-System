@@ -5,6 +5,22 @@ public class Pet {
     private int age;
     private Client owner;
 
+    public Pet() {
+        this.name = "";
+        this.race = "";
+        this.type = "";
+        this.age = 0;
+        this.owner = new Client();
+    }
+
+    public Pet(String name, String race, String type, int age, Client owner) {
+        this.name = name;
+        this.race = race;
+        this.type = type;
+        this.age = age;
+        this.owner = owner;
+    }
+
     public String getName() { return name; }
     public String getRace() { return race; }
     public String getType() { return type; }

@@ -8,6 +8,18 @@ public class Client {
     private Address address;
     private final List<Pet> pets = new ArrayList<>();
 
+    public Client() {
+        this.name = "";
+        this.phone = "";
+        this.address = new Address();
+    }
+
+    public Client(String name, String phone, Address address) {
+        this.name = name;
+        this.phone = phone;
+        this.address = address;
+    }
+
     public String getName() { return name; }
     public String getPhone() { return phone; }
     public Address getAddress() { return address; }
